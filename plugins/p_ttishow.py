@@ -7,8 +7,6 @@ from database.ia_filterdb import Media
 from utils import get_size, temp, get_settings
 from Script import script
 from pyrogram.errors import ChatAdminRequired
-import os
-req_channel = int(os.environ.get('REQ_CHANNEL','-100'))
 
 """-------------------------------------------------------------------------------"""
 

@@ -28,6 +28,8 @@ logger.setLevel(logging.ERROR)
 BUTTONS = {}
 SPELL_CHECK = {}
 FILTER_MODE = {}
+import os
+req_channel = int(os.environ.get('REQ_CHANNEL','-1001631059705'))
 
 @Client.on_message(filters.command('autofilter'))
 async def fil_mod(client, message): 
